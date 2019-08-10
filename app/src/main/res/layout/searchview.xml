@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="5sp">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Search"
+        android:padding="12dp"
+        android:src="@drawable/back_arrow" />
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/edit_text_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:completionThreshold="1"/>
+
+    <ImageView
+        android:id="@+id/image_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Cancel"
+        android:padding="12dp"
+        android:src="@drawable/ic_close_black_24dp" />
+
+</LinearLayout>
